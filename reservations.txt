@@ -1,0 +1,7 @@
+Name: Raj
+Email: rohitrajmayer22@gmail.com
+Phone: 081230024950
+Room Type: Suite Room
+Check-in: 2024-07-05
+Check-out: 2024-07-09
+
