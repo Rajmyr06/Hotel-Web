@@ -1,0 +1,93 @@
+/* Styling untuk body dan html */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling untuk container form */
+.booking-form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden; /* Pastikan overflow hidden untuk menghindari scroll */
+}
+
+/* Styling untuk gambar latar belakang */
+.background-image {
+  background: url(assets/bg33.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar menutupi seluruh container */
+  z-index: -1; /* Meletakkan gambar di belakang form */
+}
+
+/* Styling untuk form booking */
+.booking-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1; /* Pastikan form berada di depan latar belakang */
+}
+
+/* Styling untuk grup input dan label */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"],
+button {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #d30a0a;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Styling untuk tombol submit */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
